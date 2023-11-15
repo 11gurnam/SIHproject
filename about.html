@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/8c008ac8a7.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Admission and Job Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<script src="ss.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            
+            <div class="nav-links" id="navlinks">  <span class="material-symbols-outlined" onclick="hideMenu()">
+                close
+                </span>
+
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="">MORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()" >
+            menu_open
+            </span>
+           
+        </nav>
+        <h1>ABOUT US</h1>
+        
+    </section>
+<!----- about us content--->
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <h1>we are .. jnnncdn d nubd c niuhc </h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="" class="hero-btn  red-btn" >EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+        <img src="images/gg.jpg">
+    </div>
+    <div class="comment-box">
+        <h3>Leave a Comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+        </form>
+    </div>
+</div>
+</section>
+
+  
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</P>
+    <div class="icons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square" ></i>
+        <i class="fa fa-linkedin-square" ></i>
+        <i class="fa fa-envelope" ></i>
+        <i class="fa fa-whatsapp" ></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var navlinks=document.getElementById("navlinks");
+function showMenu(){
+    navlinks.style.right="0";
+}
+function hideMenu(){
+    navlinks.style.right="-500px";
+}
+</script>
+
+    </body>
+</html>
