@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Admission and Job Prediction</title>
+        <script src="https://kit.fontawesome.com/8c008ac8a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<script src="/static/ss.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <section class="header1">
+        <nav>
+            <a href="home.html"><img src="/static/logo.png"></a>
+            
+            <div class="nav-links" id="navlinks">  <span class="material-symbols-outlined" onclick="hideMenu()">
+                close
+                </span>
+
+            <ul>
+                <li><a href="/index">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/">MORE</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()" >
+            menu_open
+            </span>
+           
+        </nav>
+        <div class="text-box">
+            <h1> CONTACT US </h1>
+            </div>
+        
+    </section>
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13827.316220216124!2d76.81069686977536!3d29.955595300000027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b040ffffff%3A0x73873280de79b74b!2sKurukshetra%20University!5e0!3m2!1sen!2sin!4v1699865866991!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-facebook-square"></i>
+                <span>
+                    <h5>XYZ ROAD , SBC BUILDING</h5>
+                    <p>KURUKSHETRA UNIVERSITY , KURUKSHETRA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-whatsapp" ></i>
+                <span>
+                    <h5>+91 83078*****</h5>
+                    <p>Monday to Saturday , 10AM to 6PM</p>
+                </span>
+            </div>
+             <div>
+                <i class="fa fa-envelope" ></i>
+                <span>
+                    <h5>gkk@4822</h5>
+                    <p>Email us your Query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+           <form action="/form" method="POST" name="contactform">
+            <input type="text" name="name" placeholder="ENTER YOUR NAME" required >
+            <input type="email" name="email" placeholder="ENTER EMAIL ADDRESS" required > 
+            <input type="text" name="field" placeholder="ENTER YOUR FIELD" required >
+            <textarea rows="8" name="message" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn">SEND MESSAGE</button>
+           </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--footer-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>HERE WE PRESENT OUR SMALL SOLUTION TO CREATE A SIGNIFICANCE IN CHANGING THE NORMS</P>
+    <div class="icons">
+        
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square" ></i>
+        <i class="fa fa-linkedin-square" ></i>
+        <i class="fa fa-envelope" ></i>
+        <i class="fa fa-whatsapp" ></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var navlinks=document.getElementById("navlinks");
+function showMenu(){
+    navlinks.style.right="0";
+}
+function hideMenu(){
+    navlinks.style.right="-500px";
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src="https://kit.fontawesome.com/8c008ac8a7.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Admission and Job Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<script src="/static/ss.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="/static/logo.png"></a>
+              
+            <div class="nav-links" id="navlinks">  <span class="material-symbols-outlined" onclick="hideMenu()">
+                close
+                </span>
+
+            <ul>
+                <li><a href="/index">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/">MORE</a></li>
+                <li><a href="/about">ABOUT</a></li>
+
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()" >
+            menu_open
+            </span>
+           
+        </nav>
+        <h1>ABOUT US</h1>
+        
+    </section>
+<!----- about us content--->
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <h1>PREDICTION MODEL </h1>
+        <p>In order to keep young people employed and skilled in a world that is rapidly changing, it is necessary to forecast the current trend in the admissions and employment sectors in order to blend the courses and syllabus accordingly.Educational institutions have always been crucial to a person's personal growth and development in society. There are currently a number of college prediction apps and websites, but using them is somewhat tedious due to the lack of clear information about colleges and the time required to find the best worthy school.Correlating data from various sources and developing a computer program or application using neural networks OR any other programming tools is currently the only method available to estimate or forecast employment potential for any branch(s) or course(s) in engineering, management, pharmacy, etc. on a short-term and long-term basis.</p>
+        <a href="https://www.ijraset.com/research-paper/prediction-of-admission-and-jobs-in-engineering-and-technology" class="hero-btn  red-btn" >EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+        <img src="/static/gg.jpg">
+    </div>
+    <div class="comment-box">
+        <!--check this website to enqct the comment section https://www.smashingmagazine.com/2012/05/building-real-time-commenting-system/-->
+        <h3>Leave a Comment</h3>
+        <form class="comment-form"  method="GET" action="/comments"  >
+            <input type="text" placeholder="Enter Name" id="nameofvisitor">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your comment" name="comment" ></textarea>
+            <button type="submit" class="hero-btn red-btn" id="btn1"  >POST COMMENT</button>
+        </form>
+       
+    </div>
+</div>
+</section>
+
+  
+
+<!--footer-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>HERE WE PRESENT OUR SMALL SOLUTION TO CREATE A SIGNIFICANCE IN CHANGING THE NORMS</P>
+    <div class="icons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square" ></i>
+        <i class="fa fa-linkedin-square" ></i>
+        <i class="fa fa-envelope" ></i>
+        <i class="fa fa-whatsapp" ></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var navlinks=document.getElementById("navlinks");
+function showMenu(){
+    navlinks.style.right="0";
+}
+function hideMenu(){
+    navlinks.style.right="-500px";
+}
+
+</script>
+
+
+
+
+    </body>
+</html>

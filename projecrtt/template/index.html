@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Admission and Job Prediction</title>
+        <script src="https://kit.fontawesome.com/8c008ac8a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<script src="/static/ss.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <section class="header">
+        <nav>
+            <a href="home.html"><img src="/static/logo.png"></a>
+            
+            <div class="nav-links" id="navlinks">  <span class="material-symbols-outlined" onclick="hideMenu()">
+                close
+                </span>
+
+            <ul>
+                <li><a href="/index">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/">MORE</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()" >
+            menu_open
+            </span>
+           
+        </nav>
+        <div class="text-box">
+            <h1> WELCOME !</h1>
+            <P>HERE PASSION MEETS REALITY , GET TO KNOW WHAT SUIT'S YOU BEST , BE READY FOR THE MARKET</P>
+            <a href ="/about" class="hero-btn">Click to know more</a>
+        </div>
+        
+    </section>
+<!--DEF-->
+<section class="def">
+    <h1>JOBS</h1>
+    <p>In today’s fast-paced job market, the term “employable workforce” has become increasingly important.</p>
+<div class="row">
+    <div class="def-col">
+        <h3>What you learn</h3>
+        <p>it is crucial that individuals possess skills that match industry needs.s</p>
+        
+    </div>
+    <div class="def-col">
+        <h3>Market Needs</h3>
+        <p>With an 85% informal employment, the lack of employable people with the skills that meet the demands is an added challenge. s</p>
+        
+    </div>
+    <div class="def-col">
+        <h3>Bridging the Gap</h3>
+        <p>Upskilling can bridge the informal-to-formal employment gap. It can help bring employment opportunities to those deemed employable, but in need of additional training to succeed in their chosen fields</p>
+        
+    </div>
+
+    </div>
+</div>
+</section>
+<!--       another             section     -->
+<section class="efg">
+<h1>EXPLORE</h1>
+<p>A crucial factor in creating an employable workforce is staying up-to-date with industry trends and demands</p>
+<div class="row">
+    <div class="efg-col">
+<img src="/static/Simple-Location-Picker.png.webp">
+<div class="layer">
+    <h3>MAP</h3>
+</div>
+    </div>
+    
+    <div class="efg-col">
+<img src="/static/graph.png">
+<div class="layer">
+    <h3>Graph</h3>
+</div>
+    </div>
+    <div class="efg-col">
+<img src="/static/feedback.png">
+<div class="layer">
+    <h3>feedback</h3>
+</div>
+    </div>
+</div>
+</section>
+<!--facilities-->
+<section class="facilities">
+    <h1>WHAT WE PROVIDE</h1>
+    <p>In addition to benefiting individual workers and businesses, upskilling initiatives are also beneficial for society as a whole.</p>
+    <div class="row">
+        <div class="facilities-col">
+        <img src="/static/awareness.jpeg" >
+        <h3>Awareness</h3>
+        <p>By finding out what your customers really want, you can improve your products and services to meet their needs</p>
+
+    </div>
+    <div class="facilities-col">
+        <img src="/static/oppurtunity.jpeg" >
+        <h3>Oppurtunity</h3>
+        <p>Market opportunities are macro-level trends, situations, and experiences that open up a new category or lead to an increase in demand for a new product.</p>
+
+    </div>
+    <div class="facilities-col">
+        <img src="/static/mentorship.png" >
+        <h3>Mentorship</h3>
+        <p>Mentoring relationships emphasize helping the individual grow and accomplish goals and include several approaches to doing so.</p>
+
+    </div>
+    </div>
+</section>
+
+<!---testimonials-->
+<section class="testimonials">
+    <h1>Wht People Says</h1>
+    <p>Not only would we consider hiring one of Second Start’s Office Program graduates if an opening occurred, we actually did hire the first intern who practiced here.p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="/static/logo.png">
+        <div>
+            <p id="p1">
+                {% if comments_set1 %}
+            {% for comment in comments_set1 %}
+                {{ comment }}<br>
+            {% endfor %}
+        {% else %}
+        I came in every morning and said to myself, ‘I am here and it’s time again to start off my day accomplishing the goals I have set for myself’<br>
+        {% endif %}
+              </p>
+<h3>chris</h3>
+
+<span class="material-symbols-outlined">
+    verified
+    </span>
+    
+        </div>
+
+        </div>
+        <div class="testimonial-col">
+            <img src="/static/logo.png">
+        <div>
+            <p id="p2">
+                {% if comments_set2 %}
+            {% for comment in comments_set2 %}
+                {{ comment }}<br>
+            {% endfor %}
+        {% else %}
+        I know if there will ever be a good life for myself then I must finish my exam with recommended score<br>
+        {% endif %}
+            </p>
+            <h3>megan</h3>
+<span class="material-symbols-outlined">
+    verified
+    </span>
+        </div>
+
+        </div>
+        
+    </div>
+</section>
+<script>
+    var data=window.location.search;
+    console.log(data);
+</script>
+
+<!--Call to Action-->
+<section class="cta">
+    <h1>contact to know more </h1>
+    <a href ="/contact" class="hero-btn">CONTACT US </a>
+</section>
+
+
+<!--footer-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>HERE WE PRESENT OUR SMALL SOLUTION TO CREATE A SIGNIFICANCE IN CHANGING THE NORMS</P>
+    <div class="icons">
+        
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square" ></i>
+        <i class="fa fa-linkedin-square" ></i>
+        <i class="fa fa-envelope" ></i>
+        <i class="fa fa-whatsapp" ></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var navlinks=document.getElementById("navlinks");
+function showMenu(){
+    navlinks.style.right="0";
+}
+function hideMenu(){
+    navlinks.style.right="-500px";
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
